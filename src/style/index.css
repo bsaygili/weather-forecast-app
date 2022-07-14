@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;600&display=swap");
+/* font-family: 'Cormorant SC', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cormorant SC", serif;
+}
+.app {
+  background-image: url("/src/images/bg-winter.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: ease-out 0.4s;
+}
+.app.warm {
+  background-image: url("/src/images/bg-summer.jpg");
+}
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 25px;
+}
+.search_box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+.search_box .search_bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 16px 0 16px;
+  margin-top: -25px;
+  box-shadow: 0 5px rgb(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 28px;
+  transition: ease 0.4s;
+}
+.search_box .search_bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.location_box .location {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 3px 3px rgb(50, 50, 70, 0.7);
+}
+.location_box .date {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 1px 2px rgb(50, 50, 70, 0.7);
+}
+.weather_box {
+  text-align: center;
+}
+.weather_box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  font-size: 102px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(50, 50, 70, 0.3);
+}
+.weather_box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+}
